@@ -66,7 +66,7 @@ img {
 /*========== CLASS CSS ==========*/
 
 
-/* ======== header ======*/
+/* ======== header  nav ======*/
 
 .header-container {
     width: 100%;
@@ -148,6 +148,10 @@ input[type="checkbox"] {
         background: var(--global-color-secondary);
         height: 0;
         visibility: hidden;
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 1;
     }
     .nav__item {
         text-align: center;
@@ -180,10 +184,423 @@ input[type="checkbox"] {
 }
 
 
-/*========== LAYOUT ==========*/
+/* ========= MAIN ========= */
 
 
-/*========== NAV ==========*/
+/* home seccion */
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.home__image {
+    position: relative;
+}
+
+.home__image .girl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.home__presentation {
+    text-align: center;
+}
+
+.home__presentation h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+.home__presentation p {
+    font-size: 21px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.home__presentation button {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    color: #FFFFFF;
+    background: var(--global-color-primary);
+    border-radius: 12px;
+    border: 2px solid #FFFFFF;
+    letter-spacing: 3px;
+    margin: 20px 0px;
+}
 
 
-/*========== MEDIA QUERIES ==========*/
+/* service secction */
+
+.services {
+    background: var(--global-color-primary);
+    text-align: center;
+    padding: 115px 0px 115px 0px;
+}
+
+.services__title {
+    color: #FFFFFF;
+    font-size: 75px;
+    text-transform: uppercase;
+}
+
+.services__description {
+    font-size: 30px;
+    color: #DEEDE8;
+}
+
+.services__clases {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.services__clases h4 {
+    color: #DEEDE8;
+    font-size: 37px;
+}
+
+.services__clases p {
+    color: #DEEDE8;
+    font-size: 22px;
+    line-height: 1;
+}
+
+.services__image {
+    position: relative;
+}
+
+.services__clases .girl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+}
+
+
+/* about us section */
+
+
+/* our stats */
+
+.our-stats {
+    text-align: center;
+    padding: 115px 0px 115px 0px;
+}
+
+.our-stats__title {
+    font-size: 75px;
+}
+
+.our-stats__description {
+    font-size: 30px;
+    line-height: 1.3;
+}
+
+.our-stats__rank {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.our-stats__rank div {
+    border-radius: 50%;
+    border: 3px solid var(--global-color-primary);
+    padding: 100px;
+}
+
+.our-stats__rank h5 {
+    font-size: 67px;
+}
+
+.our-stats__rank p {
+    font-size: 27px;
+    line-height: 1;
+    margin: 0;
+}
+
+
+/* best instructor */
+
+.instructor {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background: var(--global-color-primary);
+    overflow: hidden;
+}
+
+.instructor__data {
+    flex-basis: 50%;
+    color: #FFFFFF;
+}
+
+.instructor__title {
+    margin-bottom: 50px;
+    font-size: 75px;
+    line-height: 1;
+}
+
+.instructor__description {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 50px;
+}
+
+.instructor__data button {
+    color: var(--global-color-primary);
+    padding: 8px 50px;
+    font-size: 25px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: .3125rem;
+}
+
+.instructor__image {
+    width: 50%;
+    height: 700px;
+    object-fit: cover;
+}
+
+
+/* experience */
+
+.experience {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.experience__details h3 {
+    font-size: 75px;
+    line-height: 1;
+    margin-bottom: 50px;
+}
+
+.experience__details p {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 50px;
+}
+
+.experience__details button {
+    color: #DEEDE8;
+    padding: 10px 60px;
+    font-size: 25px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: .3125rem;
+    background: var(--global-color-primary);
+    margin-bottom: 50px;
+}
+
+
+/* pricing */
+
+.pricing {
+    background: var(--global-color-primary);
+    text-align: center;
+    padding: 115px 0px 115px 0px;
+}
+
+.pricing__title {
+    font-size: 75px;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+.pricing__description {
+    color: #DEEDE8;
+    font-size: 30px;
+    line-height: 1.3;
+    margin-bottom: 50px;
+}
+
+.pricing__cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pricing__courses {
+    text-align: center;
+    background: var(--global-background-color);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.pricing__courses h4 {
+    font-size: 37px;
+    text-transform: uppercase;
+    color: var(--global-color-primary);
+}
+
+.pricing__courses p {
+    font-size: 22px;
+    line-height: 1.3;
+}
+
+.pricing__courses button {
+    color: #FFFFFF;
+    padding: 10px 60px;
+    font-size: 25px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: .3125rem;
+    background: var(--global-color-primary);
+}
+
+
+/* contact us */
+
+
+/* trainer */
+
+.trainer {
+    text-align: center;
+    padding: 115px 0px 115px 0px;
+}
+
+.trainer__image {
+    position: relative;
+}
+
+.trainer__image .girl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.trainer__description {
+    font-size: 58px;
+    line-height: 1.2;
+}
+
+.trainer__name {
+    font-size: 58px;
+    text-transform: uppercase;
+}
+
+
+/* subscribe */
+
+.subscribe {
+    text-align: center;
+    background: var(--global-color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 115px 0px 115px 0px;
+}
+
+.subscribe__title {
+    font-size: 75px;
+    color: #DEEDE8;
+    margin-bottom: 50px;
+}
+
+.subscribe__description {
+    font-size: 30px;
+    color: #DEEDE8;
+    line-height: 1.3;
+    margin-bottom: 50px;
+}
+
+.subscribe__search {
+    display: flex;
+    height: 64px;
+    width: 700px;
+}
+
+.subscribe__search input {
+    width: 480px;
+    border: none;
+    outline: none;
+    background: #FFFFFF;
+    height: 100%;
+    font-size: 20px;
+    border-radius: 25px 0 0 25px;
+}
+
+.subscribe__search button {
+    width: 220px;
+    color: var(--global-color-primary);
+    background: var(--global-color-secondary);
+    font-size: 25px;
+    border: none;
+    border-radius: 25px;
+    margin-left: -18px;
+}
+
+
+/* footer */
+
+.footer {
+    background: var(--global-background-color);
+    padding: 115px 0px 115px 0px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer__title {
+    font-size: 33px;
+    margin-bottom: 20px;
+}
+
+.footer__item {
+    margin-bottom: 2px;
+}
+
+.footer__content ul li {
+    margin-bottom: 10px;
+}
+
+.footer__link {
+    color: var(--global-text-color);
+    font-size: 20px;
+}
+
+.footer__content p {
+    font-size: 25px;
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+
+.footer__network-socials {
+    margin-top: 20px;
+}
+
+.footer__network-socials a {
+    margin-left: 10px;
+}
+
+.footer__link img {
+    background: var(--global-color-primary);
+}
